@@ -15,3 +15,9 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           fetch-depth: 0
+
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Execute testing
+        run: yarn test
