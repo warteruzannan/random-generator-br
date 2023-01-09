@@ -6,7 +6,7 @@ import {
   useColorScheme,
 } from 'react-native';
 
-import {Colors, Header} from 'react-native/Libraries/NewAppScreen';
+import {Colors} from 'react-native/Libraries/NewAppScreen';
 import TabBar from '../presentation/components/tab-bar';
 
 const App = () => {
@@ -18,16 +18,11 @@ const App = () => {
 
   return (
     <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
+      <StatusBar barStyle={'light-content'} backgroundColor="#5a6bcc" />
       <TabBar title="Gerador BR" />
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-      </ScrollView>
+        style={backgroundStyle}></ScrollView>
     </SafeAreaView>
   );
 };
