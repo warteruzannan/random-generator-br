@@ -1,7 +1,7 @@
 import {StyleSheet, Text, TouchableOpacity, ViewProps} from 'react-native';
-import {colors, dimensions} from '../../consts';
+import {colors, dimensions, fonts} from '../../consts';
 
-import Icon from 'react-native-vector-icons/Ionicons';
+import Icon from 'react-native-vector-icons/FontAwesome5';
 
 const styles = StyleSheet.create({
   container: {
@@ -20,19 +20,25 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: dimensions.BORDER_RADIOUS,
   },
+  title: {
+    marginTop: dimensions.MARGING,
+    fontSize: fonts.FONT_SIZE,
+    fontWeight: fonts.FONT_SEMI_BOLD,
+  },
 });
 
 type OwnProps = {
   title: string;
+  icon?: string;
 };
 
 type Props = OwnProps & ViewProps;
 const ItemCard: React.FC<Props> = props => {
-  const {title} = props;
+  const {title, icon} = props;
   return (
     <TouchableOpacity style={[styles.container, props.style || {}]} {...props}>
-      <Icon name="rocket" size={60} color="#900" />
-      <Text>{title}</Text>
+      <Icon name={icon || 'city'} size={60} color={colors.BLACK} />
+      <Text style={styles.title}>{title}</Text>
     </TouchableOpacity>
   );
 };

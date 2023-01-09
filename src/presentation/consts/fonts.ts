@@ -14,5 +14,6 @@ type weightType =
 
 export const fonts = {
   FONT_SIZE: 18,
-  FONT_WHEIGHT: '400' as weightType,
+  FONT_REGULAR: '400' as weightType,
+  FONT_SEMI_BOLD: '700' as weightType,
 };

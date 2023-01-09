@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   title: {
     color: colors.WHITE,
     fontSize: fonts.FONT_SIZE,
-    fontWeight: fonts.FONT_WHEIGHT,
+    fontWeight: fonts.FONT_REGULAR,
   },
 });
 
