@@ -1,11 +1,7 @@
-import {
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-  ViewProps,
-} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, ViewProps} from 'react-native';
 import {colors, dimensions} from '../../consts';
+
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const styles = StyleSheet.create({
   container: {
@@ -35,6 +31,7 @@ const ItemCard: React.FC<Props> = props => {
   const {title} = props;
   return (
     <TouchableOpacity style={[styles.container, props.style || {}]} {...props}>
+      <Icon name="rocket" size={60} color="#900" />
       <Text>{title}</Text>
     </TouchableOpacity>
   );
