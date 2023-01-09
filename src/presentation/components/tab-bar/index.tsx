@@ -1,6 +1,6 @@
 import React, {memo} from 'react';
 import {StyleSheet, Text, View, ViewProps} from 'react-native';
-import {colors} from '../../consts';
+import {colors, dimensions, fonts} from '../../consts';
 
 const styles = StyleSheet.create({
   container: {
@@ -8,18 +8,18 @@ const styles = StyleSheet.create({
     backgroundColor: colors.PRIMARY,
     justifyContent: 'center',
     alignItems: 'center',
-    borderBottomStartRadius: 10,
-    borderBottomEndRadius: 10,
-    shadowColor: '#171717',
+    borderBottomStartRadius: dimensions.BORDER_RADIOUS,
+    borderBottomEndRadius: dimensions.BORDER_RADIOUS,
+    shadowColor: colors.SHADOW,
     shadowOffset: {width: -2, height: 4},
     shadowOpacity: 0.2,
-    shadowRadius: 10,
-    elevation: 20,
+    shadowRadius: dimensions.BORDER_RADIOUS,
+    elevation: dimensions.ELEVATION,
   },
   title: {
     color: colors.WHITE,
-    fontWeight: '600',
-    fontSize: 18,
+    fontSize: fonts.FONT_SIZE,
+    fontWeight: fonts.FONT_WHEIGHT,
   },
 });
 
