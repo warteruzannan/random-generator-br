@@ -1,4 +1,4 @@
-package com.randomgeneratorbr;
+package br.com.warteruzannan.randomgeneratorbr;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

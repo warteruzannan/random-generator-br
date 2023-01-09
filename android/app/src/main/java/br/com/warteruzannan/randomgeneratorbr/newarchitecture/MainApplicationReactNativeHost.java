@@ -1,4 +1,4 @@
-package com.randomgeneratorbr.newarchitecture;
+package br.com.warteruzannan.randomgeneratorbr.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.fabric.ReactNativeConfig;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.randomgeneratorbr.BuildConfig;
-import com.randomgeneratorbr.newarchitecture.components.MainComponentsRegistry;
-import com.randomgeneratorbr.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import br.com.warteruzannan.randomgeneratorbr.BuildConfig;
+import br.com.warteruzannan.randomgeneratorbr.newarchitecture.components.MainComponentsRegistry;
+import br.com.warteruzannan.randomgeneratorbr.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

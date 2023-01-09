@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.randomgeneratorbr">
+  package="br.com.warteruzannan.randomgeneratorbr">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
