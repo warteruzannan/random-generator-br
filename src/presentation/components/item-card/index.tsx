@@ -1,7 +1,7 @@
 import {StyleSheet, Text, TouchableOpacity, ViewProps} from 'react-native';
 import {colors, dimensions} from '../../consts';
 
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 const styles = StyleSheet.create({
   container: {
