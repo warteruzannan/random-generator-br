@@ -1,23 +1,31 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {FlatList} from 'react-native';
 
 import ItemCard from '../../../presentation/components/item-card';
 import {itensData} from './itens.json';
 
-const Dashboard: React.FC = () => {
+const Dashboard: React.FC = (props: any) => {
   const renderItem = ({item}: any) => (
-    <ItemCard title={item.title} icon={item.icon} />
+    <ItemCard
+      title={item.title}
+      icon={item.icon}
+      onPress={() => {
+        props.navigation.navigate('Password');
+      }}
+    />
   );
 
   return (
-    <FlatList
-      style={{flex: 1}}
-      data={itensData}
-      renderItem={renderItem}
-      keyExtractor={item => item.id}
-      horizontal={false}
-      numColumns={2}
-    />
+    <>
+      <FlatList
+        style={{flex: 1}}
+        data={itensData}
+        renderItem={renderItem}
+        keyExtractor={item => item.id}
+        horizontal={false}
+        numColumns={2}
+      />
+    </>
   );
 };
 

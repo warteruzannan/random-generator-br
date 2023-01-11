@@ -1,4 +1,9 @@
-import {StyleSheet, Text, TouchableOpacity, ViewProps} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  TouchableOpacityProps,
+} from 'react-native';
 import {colors, dimensions, fonts} from '../../consts';
 
 import Icon from 'react-native-vector-icons/FontAwesome5';
@@ -32,7 +37,7 @@ type OwnProps = {
   icon?: string;
 };
 
-type Props = OwnProps & ViewProps;
+type Props = OwnProps & TouchableOpacityProps;
 const ItemCard: React.FC<Props> = props => {
   const {title, icon} = props;
   return (
