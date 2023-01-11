@@ -4,20 +4,10 @@ import Icon from 'react-native-vector-icons/FontAwesome5';
 import {colors} from '../../consts';
 import Clipboard from '@react-native-clipboard/clipboard';
 import Button from '../../components/button';
+import {generatePassword} from '../../../core/usecases/generate-password';
 
 const Password: React.FC<ViewProps> = props => {
   const [password, setPassword] = useState<string>('035.976.121-64');
-
-  const generatePassword = (length = 13) => {
-    let result = '';
-    let characters =
-      'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%¨&*()[]^;,';
-    let charactersLength = characters.length;
-    for (let i = 0; i < length; i++) {
-      result += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    return result;
-  };
 
   useEffect(() => {
     setPassword(generatePassword());
