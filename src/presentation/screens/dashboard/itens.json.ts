@@ -21,7 +21,7 @@ export const itensData = [
     id: '303a54b7-89b5-4a4f-8e03-362d9e4bf186',
     title: 'Nota Fiscal',
     icon: 'barcode',
-    screen: 'Password',
+    screen: 'Invoice',
   },
   {
     id: '5dda9053-fca5-442d-9482-a2f5e117ccfa',

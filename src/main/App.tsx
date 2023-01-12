@@ -9,6 +9,7 @@ import Password from '../presentation/screens/password';
 import Cnpj from '../presentation/screens/cnpj';
 import Cpf from '../presentation/screens/cpf';
 import Email from '../presentation/screens/email';
+import Invoice from '../presentation/screens/invoice';
 
 const Stack = createNativeStackNavigator();
 
@@ -55,6 +56,12 @@ const App = () => {
             name="Email"
             component={Email}
             options={{title: 'Email'}}
+          />
+
+          <Stack.Screen
+            name="Invoice"
+            component={Invoice}
+            options={{title: 'Nota fiscal'}}
           />
         </Stack.Navigator>
       </NavigationContainer>

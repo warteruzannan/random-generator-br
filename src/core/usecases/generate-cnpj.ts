@@ -18,11 +18,11 @@ function calculateVerifyingDigit(dividend: number) {
   return mod < 2 ? 0 : verifyingDigitDefaultDivisor - mod;
 }
 
-function verifyingDigitsGenerator(
+export function verifyingDigitsGenerator(
   digitsQuantity: any,
-  array: Array<number>,
-  multipliers: Array<number>,
-  lastMultiplier: number,
+  array: Array<any>,
+  multipliers: Array<any>,
+  lastMultiplier?: number,
 ) {
   for (let i = 1; i <= digitsQuantity; i++) {
     const dividend = calculateDividend(array, multipliers);
@@ -36,7 +36,7 @@ function verifyingDigitsGenerator(
   return array.join('');
 }
 
-function createRamdomArray(length: number, maxNumber: number) {
+export function createRamdomArray(length: number, maxNumber: number) {
   const array = [];
   while (array.length < length) {
     array.push(Math.floor(Math.random() * maxNumber));
@@ -44,7 +44,7 @@ function createRamdomArray(length: number, maxNumber: number) {
   return array;
 }
 
-function cnpjGenerator() {
+export function cnpjGenerator() {
   const cnpjLength = 8;
   const maxNumber = 9;
   const multipliers = [2, 3, 4, 5, 6, 7, 8, 9, 2, 3, 4, 5];
@@ -77,7 +77,7 @@ export const generateCnpj = () => {
 
   return cnpjMask
     .split('')
-    .map((char, index) => {
+    .map((_, index) => {
       return caracter[index] ? caracter[index] : cnpj.shift();
     })
     .join('');
