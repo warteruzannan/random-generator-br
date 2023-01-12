@@ -45,6 +45,6 @@ export const itensData = [
     id: '05329d3b-f999-46c1-9dc2-23c32990ceed',
     title: 'Usuário',
     icon: 'user-check',
-    screen: 'Password',
+    screen: 'User',
   },
 ];

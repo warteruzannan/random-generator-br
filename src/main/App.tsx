@@ -12,6 +12,7 @@ import Email from '../presentation/screens/email';
 import Invoice from '../presentation/screens/invoice';
 import Website from '../presentation/screens/website';
 import Cellphone from '../presentation/screens/cellphone';
+import User from '../presentation/screens/user';
 
 const Stack = createNativeStackNavigator();
 
@@ -76,6 +77,12 @@ const App = () => {
             name="Cellphone"
             component={Cellphone}
             options={{title: 'Celular'}}
+          />
+
+          <Stack.Screen
+            name="User"
+            component={User}
+            options={{title: 'Usuário'}}
           />
         </Stack.Navigator>
       </NavigationContainer>
