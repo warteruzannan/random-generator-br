@@ -1,3 +1,5 @@
+import {Chance} from 'chance';
+
 export const generateEmail = () => {
-  return 'warteruzannan@gmail.com';
+  return new Chance().email();
 };

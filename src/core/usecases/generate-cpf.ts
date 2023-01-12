@@ -1,3 +1,5 @@
+import Chance from 'chance';
+
 export const generateCpf = () => {
-  return '035.976.121-64';
+  return new Chance().cpf();
 };
