@@ -27,7 +27,7 @@ export const itensData = [
     id: '5dda9053-fca5-442d-9482-a2f5e117ccfa',
     title: 'Web site',
     icon: 'laptop',
-    screen: 'Password',
+    screen: 'Website',
   },
   {
     id: '2289e207-c976-43ac-a327-460147468331',
@@ -39,7 +39,7 @@ export const itensData = [
     id: '2616901d-dd72-4f9b-8364-56f34943d69f',
     title: 'Celular',
     icon: 'mobile-alt',
-    screen: 'Password',
+    screen: 'Cellphone',
   },
   {
     id: '05329d3b-f999-46c1-9dc2-23c32990ceed',

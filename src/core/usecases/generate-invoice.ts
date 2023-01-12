@@ -36,6 +36,5 @@ function invoiceKeyGenerator() {
 }
 
 export const generateInvoice = () => {
-  console.log(invoiceKeyGenerator());
   return invoiceKeyGenerator();
 };

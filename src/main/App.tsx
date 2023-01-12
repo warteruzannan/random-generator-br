@@ -10,6 +10,8 @@ import Cnpj from '../presentation/screens/cnpj';
 import Cpf from '../presentation/screens/cpf';
 import Email from '../presentation/screens/email';
 import Invoice from '../presentation/screens/invoice';
+import Website from '../presentation/screens/website';
+import Cellphone from '../presentation/screens/cellphone';
 
 const Stack = createNativeStackNavigator();
 
@@ -62,6 +64,18 @@ const App = () => {
             name="Invoice"
             component={Invoice}
             options={{title: 'Nota fiscal'}}
+          />
+
+          <Stack.Screen
+            name="Website"
+            component={Website}
+            options={{title: 'Site'}}
+          />
+
+          <Stack.Screen
+            name="Cellphone"
+            component={Cellphone}
+            options={{title: 'Celular'}}
           />
         </Stack.Navigator>
       </NavigationContainer>
