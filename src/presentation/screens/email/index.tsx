@@ -10,7 +10,7 @@ const Email: React.FC<ViewProps> = props => {
 
   return (
     <View {...props} style={{flex: 1, padding: 10, alignItems: 'center'}}>
-      <Input icon="lock" value={email} editable={false} />
+      <Input icon="at" value={email} editable={false} />
 
       <Button
         icon="redo"

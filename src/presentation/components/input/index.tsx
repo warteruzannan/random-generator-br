@@ -25,7 +25,7 @@ const Input: React.FC<InputProps> = props => {
   const {icon} = props;
   return (
     <View style={styles.container}>
-      {icon && <Icon name={'lock'} size={30} color={colors.TRANSPARENT} />}
+      {icon && <Icon name={icon} size={30} color={colors.TRANSPARENT} />}
       <TextInput
         {...props}
         underlineColorAndroid={'#999'}

@@ -10,7 +10,7 @@ const Website: React.FC<ViewProps> = props => {
 
   return (
     <View {...props} style={{flex: 1, padding: 10, alignItems: 'center'}}>
-      <Input icon="lock" value={website} editable={false} />
+      <Input icon="laptop" value={website} editable={false} />
 
       <Button
         icon="redo"

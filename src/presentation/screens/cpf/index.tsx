@@ -10,7 +10,7 @@ const Cpf: React.FC<ViewProps> = props => {
 
   return (
     <View {...props} style={{flex: 1, padding: 10, alignItems: 'center'}}>
-      <Input icon="lock" value={cpf} editable={false} />
+      <Input icon="user-alt" value={cpf} editable={false} />
 
       <Button
         icon="redo"

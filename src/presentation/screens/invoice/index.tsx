@@ -11,7 +11,7 @@ const Invoice: React.FC<ViewProps> = props => {
   return (
     <View {...props} style={{flex: 1, padding: 10, alignItems: 'center'}}>
       <Input
-        icon="lock"
+        icon="barcode"
         value={invoice}
         editable={false}
         numberOfLines={2}

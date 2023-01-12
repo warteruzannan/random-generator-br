@@ -10,7 +10,7 @@ const Cellphone: React.FC<ViewProps> = props => {
 
   return (
     <View {...props} style={{flex: 1, padding: 10, alignItems: 'center'}}>
-      <Input icon="lock" value={cellphone} editable={false} />
+      <Input icon="mobile-alt" value={cellphone} editable={false} />
 
       <Button
         icon="redo"
