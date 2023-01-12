@@ -10,7 +10,7 @@ const Dashboard: React.FC = (props: any) => {
       title={item.title}
       icon={item.icon}
       onPress={() => {
-        props.navigation.navigate('Password');
+        props.navigation.navigate(item.screen);
       }}
     />
   );

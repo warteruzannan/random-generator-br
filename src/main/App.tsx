@@ -6,6 +6,9 @@ import {SafeAreaView, StatusBar, useColorScheme} from 'react-native';
 import {colors} from '../presentation/consts';
 import Dashboard from '../presentation/screens/dashboard';
 import Password from '../presentation/screens/password';
+import Cnpj from '../presentation/screens/cnpj';
+import Cpf from '../presentation/screens/cpf';
+import Email from '../presentation/screens/email';
 
 const Stack = createNativeStackNavigator();
 
@@ -41,6 +44,17 @@ const App = () => {
             name="Password"
             component={Password}
             options={{title: 'Senhas'}}
+          />
+          <Stack.Screen
+            name="Cnpj"
+            component={Cnpj}
+            options={{title: 'Cnpj'}}
+          />
+          <Stack.Screen name="Cpf" component={Cpf} options={{title: 'Cpf'}} />
+          <Stack.Screen
+            name="Email"
+            component={Email}
+            options={{title: 'Email'}}
           />
         </Stack.Navigator>
       </NavigationContainer>
